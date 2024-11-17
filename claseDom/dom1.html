@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Saludo</h1>
+        <p id="mensaje"> Mensaje al cliente</p>
+        <button onclick="cambiarTexto()">Cambiar </button>
+    </div>
+</body>
+
+    <script>
+        function cambiarTexto(){
+            var elemento=document.getElementById("titulo");
+            //cambia el texto
+            elemento.innerHTML="Hola Mundo....";
+            cambiarMensaje("Nelson Rincon");
+        }
+        function cambiarMensaje(nombreCliente){
+            let elemento=document.getElementById("mensaje");
+            //cambiar el mensaje
+            elemento.innerHTML="<h1>Saludo "+nombreCliente + " desde el mundo del javaScript</h1>"
+        }
+    </script>
+
+</html>
